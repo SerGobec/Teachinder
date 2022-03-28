@@ -1,0 +1,549 @@
+body{
+    background-color: #fcfcfc;
+    padding: 0px auto;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+
+.allContent{
+    /* filter: blur(5px); */
+    position: relative;
+    background-color: white;
+    width: 95%;
+    margin: auto;
+    padding: 0px;
+    padding-bottom: 1px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 3px rgba(0,0,0,0.5);
+}
+
+.blured{
+    filter: blur(5px);
+}
+
+hr{
+    width: 400px;
+}
+/* ------------------------ */
+/* Header with all inside */
+
+header{
+    margin: 0px;
+    padding-top: 5vh;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    height: 20vh;
+    margin-bottom: 5vh;
+   /* border: 1px solid darkblue;*/
+}
+.topLevelOfHeader{
+    display: flex;
+    justify-content: space-between;
+   /* border: 1px solid black;*/
+}
+
+.logoInHeader{
+    margin: auto 0px;
+    color: #FAFAFA;
+    font-size: 40px;
+    font-family:'Times New Roman', Times, serif;
+    text-shadow: -1px -1px 1px red,1px 1px 2px black;
+}
+
+.logoInHeader:hover{
+    color: #EEEEEE;
+    text-shadow: -2px -1px 1px red,2px 1px 2px black;
+}
+
+.searchTeacher{
+    
+    width: auto;
+    padding: 0px;
+}
+
+.searchTeacher form{
+    vertical-align:middle;
+    display: flex;
+}
+
+.divForInputSerchTeacher{
+    margin-right: 10px;
+}
+/* input text search*/
+.inputSerchTeacher{
+    height: 40px;
+    padding: 0px;
+    margin: 0px;
+    width: 17vw;
+    padding-left: 5px;
+    border: 1px solid grey;
+}
+/* Button submit*/
+.submitSearch{
+    background-color: white;
+    
+    height: 42px;
+    padding: 0px;
+    margin: 0px;
+    width: 7vw;
+    align-items: center;
+    border: 1px solid red;
+    border-top: 2px solid red;
+    border-right: 2px solid red;
+    font-size: 15px;
+    color: red;
+    transition: .5s;
+}
+.submitSearch:hover{
+    background-color: red;
+    color: white;
+}
+
+/* lower level of header */
+.lowLevelOfHeader{
+    margin-top: 7vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+.lowLevelOfHeader nav{
+    margin: auto 0px;
+    width: 30vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.headerNavElement{
+    text-decoration: none;
+    color: red;
+    font-size: 20px;
+}
+.headerNavElement:hover{
+    color: #CC4836;
+}
+
+.add_teacher_button{
+    text-align: center;
+    font-size: 25px;
+    width: 12vw;
+    height: 45px;
+    line-height: 45px;
+    background-color: white;
+    color: red;
+    border: 2px solid red;
+    border-bottom: .4px solid red;
+    font-weight: bold;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    transition: .5s;
+    overflow: hidden;
+}
+
+.add_teacher_button:hover{
+    background-color: red;
+    color: white;
+}
+/* ------------------------ */
+/* ------------------------ */
+/* main */
+main{
+    margin: 0px;
+    padding-top: 20px;
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+
+/* Top Teacher section */
+.top_teacher_section{
+    margin-bottom: 35px;
+}
+
+.top_teacher_topic{
+    text-align: center;
+    font-size: 35px;
+}
+
+.top_teacher_filters{
+    display: flex;
+    margin-top: 4vh;
+}
+
+.show_with_photo_checkbox{
+    margin-left: 20px;
+    color: #606060;
+}
+
+.show_only_favourite_checkbox{
+    margin-left: 30px;
+    color: #606060;
+}
+.show_only_favourite_checkbox::before{
+    content: "⁞";
+    padding-right: 5px;
+}
+
+/* Top Teacher section - cards */
+.top_teacher_cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+}
+/* pattern for small card */
+.teacher_card_small{
+    height: 37vh;
+    width: 15vw;
+    min-height: 35vh;
+    margin: 5px;
+    position: relative;
+}
+/* 
+    small_teachers_img_div used for alight
+    round_div_for_icon used for create round border
+*/
+.small_teachers_img_div{
+padding: auto 0px;
+}
+
+.round_div_for_icon{
+    width: 9vw;
+    height: 9vw;
+    border: 3px solid red;
+    border-radius: 100px;
+    padding: 0px;
+    overflow:hidden;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2vh;
+}
+.round_div_for_icon:hover{
+    border: 3px solid #aa3b2cb7;
+}
+
+.small_roung_teachers_img{
+    -o-object-fit: cover;
+    object-fit: cover;
+    width: 9vw;
+    height:auto;
+}
+.small_roung_teachers_img:hover{
+    width: 10vw;
+}
+/* name, sname and country   */
+.teachers_name_small_card{
+    margin-top: 3vh;
+    text-align: center;
+    font-size: 24px;
+}
+.teachers_sname_small_card{
+    margin-top:  0px;
+    text-align: center;
+    font-size: 24px;
+}
+.teachers_country_small_card{
+    /*text-align: center;
+    font-size: 10px;
+    position:absolute;  добавили
+    bottom:0px;
+    margin: auto 0;
+    width: 100%;
+    padding-bottom: 1vh; */
+    text-align: center;
+    font-size: 10px;
+    position: relative;;
+    top:5vh;
+    margin: auto 0;
+    width: 100%;
+    padding-bottom: 1vh;
+}
+
+/* ----------------- */
+/* Statistic section */
+.statistics_section{
+    margin-top: 20px;
+}
+.statistics_topic{
+    text-align: center;
+    font-size: 35px;
+}
+.statistic_table_div{
+    margin-top: 20px;
+}
+.statistic_table_table{
+    border-spacing: 0px;
+    border-collapse: collapse;
+}
+.statistic_header_table{
+    font-size: 18px;
+    color: #181818;
+    text-decoration: none;
+    border-bottom: 1px solid black;
+    height: 45px;
+}
+.statistic_tipical_row_white{
+    font-size: 16px;
+    background-color: white;
+    color: #181818;
+    height: 30px;
+}
+.statistic_tipical_row_grey{ 
+    font-size: 16px;
+    background-color: #F9F5F9;
+    color: #181818;
+    height: 30px;
+}
+
+.statistic_name_column{
+    text-align: left;
+    width: 20vw;
+    padding-left: 15px;
+}
+.statistic_age_column{
+    text-align: center;
+    width: 30vw;
+    padding-left: 15px;
+}
+.statistic_gender_column{
+    text-align: center;
+    width: 10vw;
+    padding-left: 15px;
+}
+.statistic_nationality_column{
+    text-align: center;
+    width: 30vw;
+    padding-left: 15px;
+}
+/* Chose statistic`s page */
+.chose_statistic_page{
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.chose_statistic_page_link{
+    text-decoration: none;
+    color: cornflowerblue;
+    padding: 5px;
+}
+
+.chose_statistic_page_link:hover{
+    color: black;
+}
+/* -------------------------- */
+/* -----Favourites section--  */
+.favorites_section_section{
+    margin-top: 20px;
+}
+.favorites_topic{
+    text-align: center;
+    font-size: 35px;
+}
+.favorites_div{
+    position: relative;
+}
+.scloll_left_favotites{
+    position:absolute;
+    left: -4vw;
+    color: #888888;
+    top: 14vh;
+    font-size: 70px;
+}
+.scloll_left_favotites:hover{
+    color: black;
+}
+
+.scloll_right_favotites{
+    position:absolute;
+    right: -4vw;
+    color: #888888;
+    top: 14vh;
+    font-size: 70px;
+}
+.scloll_right_favotites:hover{
+    color: black;
+}
+
+.favorites_content{
+ 
+    width: 100%;
+    height: 39vh;
+    margin-bottom: 25px;
+}
+/* ---------------- */
+/* -----footer----- */
+footer{
+    margin-top: 30px;
+    margin-bottom: 5vh;
+}
+
+.lowLevelOfFooter{
+    margin-top: 7vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+.lowLevelOfFooter nav{
+    margin: auto 0px;
+    width: 30vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footerNavElement{
+    text-decoration: none;
+    color: #65A3BE;
+    font-size: 20px;
+}
+
+.footerNavElement:hover{
+    color: #548EAA;
+}
+
+/*-------------------------*/
+/* Add new teacher div     */
+.add_teacher_block{
+    background-color: white;
+    z-index: 999;
+    width: 24vw;
+    padding: 0px;
+    position: fixed;
+    margin-left: -12vw;
+    margin-top: -45vh;
+    top: 50%;
+    left: 50%;
+    
+}
+
+.block_hide{
+    visibility: hidden;
+}
+
+.add_teacher_header{
+    text-align: center;
+}
+
+.add_teacher_fieldset{
+    padding-left: 4vw;
+    padding-right: 4vw;
+    padding-top: 1.5vh;
+}
+
+.add_teacher_elem_div{
+    padding-bottom: 2vh;
+}
+
+.add_teach_elem{
+    width: 100%;
+    height: 3.5vh;
+    margin-top: 1vh;
+}
+
+.add_teacher_sex{
+ display: flex;
+ justify-content: space-between;
+ margin-bottom: 1vh;
+}
+
+.add_teacher_elem_color{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0px;
+}
+
+.add_teach_send_button{
+    text-align: center;
+    padding: 3.5vh 0;
+    width: 100%;
+    height: 6vh;
+}
+
+.close_add_teach{
+    position: absolute;
+    right: 1.5vw;
+    top: 3vh;
+}
+
+.close_add_teach:hover{
+    cursor: pointer;
+}
+
+/* Teacher card */
+
+.teacher_info{
+    background-color: white;
+    border: 1px solid black;
+    z-index: 999;
+    min-width: 60vw;
+    max-width: 60vw;
+    padding: 0px;
+    position: fixed;
+    margin-left: -30vw;
+    margin-top: -45vh;
+    top: 50%;
+    left: 50%; 
+    box-shadow: 0 0 5px rgba(0,0,0,0.5);
+}
+
+.info_header{
+    margin:3vh 0px;
+    text-align: center;
+    font-size: 30px;
+    font-family: "system-ui";
+}
+
+.teach_info_Content{
+    margin-left: 3.5vw;
+    margin-right: 3.5vw;
+    min-height: 290px;
+    margin-bottom: 1vh;
+}
+
+.teacher_info_photo{
+    float: left;
+    width: 270px;
+    height: 270px;
+    border: 1px solid black;
+    margin-right: 25px;
+    background-image: url("img/rick2.png");
+    background-size: cover;
+}
+.info_nameSname{
+    font-size: 40px;
+    font-family: "system-ui";
+    margin-bottom: 5vh;
+}
+
+.info_elem{
+    margin-bottom: 2vh;
+    font-size: 14px;
+}
+
+.info_bottom{
+    margin-left: 3.5vw;
+    margin-right: 3.5vw;
+    margin-bottom: 2vh;
+}
+
+.info_other_text{
+    font-size: 14px;
+    font-family: "system-ui";
+    margin-bottom: 2vh;
+}
+
+.info_toggleMap{
+    text-decoration: none;
+    border-bottom: 1px dashed #65A3BE;
+    color: #65A3BE;
+    font-size: 14px;
+}
+
+.close_teach_info  {
+    position: absolute;
+    right: 1.5vw;
+    top: 3vh;
+}
+
+.close_teach_info:hover  {
+    cursor: pointer;
+}
+
+@media (max-width: 768px){
+    /* add some code here */
+}

@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="uk">
+        <head itemscope itemtype="http://schema.org/WebSite">
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+        <title>lab2</title>
+    </head>
+    <body>
+        <!-- blured allContent -->
+        <div class="allContent">
+            <header>
+                <div class="topLevelOfHeader"> 
+                    <div class="logoInHeader">Teachinder</div>
+                    <div class="searchTeacher">
+                        <form>
+                            <div class="divForInputSerchTeacher">
+                                <input type="text" class="inputSerchTeacher" placeholder="Enter name to search"> 
+                            </div>
+                            <button type="submit" value="Search" class="submitSearch">Search</button>
+                        </form>
+                    </div>
+                </div> 
+                <div class="lowLevelOfHeader">
+                    <nav>
+                        <a class="headerNavElement" href="#">Teachers</a>
+                        <a class="headerNavElement" href="#">Statistics</a>
+                        <a class="headerNavElement" href="#">Favorites</a>
+                        <a class="headerNavElement" href="#">About</a>
+                    </nav>
+                    <div class="add_teacher_button">
+                        Add teacher
+                    </div>
+                </div>
+            </header>
+            <hr>
+            <main>
+                <section class="top_teacher_section">
+                    <div class="top_teacher_topic">Top Teachers</div>
+                    <div class="top_teacher_content">
+                        <div class="top_teacher_filters">
+                                <span>Filter by: </span>   
+                                <div class="show_with_photo_checkbox">
+                                    <input type="checkbox" name="option1" value="a1">Show only with photo
+                                </div>
+                                <div class="show_only_favourite_checkbox">
+                                    <input type="checkbox" name="option2" value="a2">Show only Favorites
+                                </div>
+                        </div>
+                        <div class="top_teacher_cards">
+                            <div class="teacher_card_small"> 
+                                <div class="small_teachers_img_div">
+                                    <div class="round_div_for_icon">
+                                        <img src="img/rick2.PNG" alt="N.S." class="small_roung_teachers_img"> 
+                                    </div> 
+
+                                </div>                       
+                                <div class="teachers_name_small_card">Rick</div>
+                                <div class="teachers_sname_small_card">Sanches</div>
+                                <div class="teachers_country_small_card">USA</div>
+                            </div>
+                            <div class="teacher_card_small">
+                                <div class="small_teachers_img_div">
+                                    <div class="round_div_for_icon">
+                                        <img src="img/morty1.jpg" alt="N.S." class="small_roung_teachers_img"> 
+                                    </div> 
+
+                                </div>                       
+                                <div class="teachers_name_small_card">Morty</div>
+                                <div class="teachers_sname_small_card">Smith</div>
+                                <div class="teachers_country_small_card">USA</div>
+                            </div>
+                            <div class="teacher_card_small">
+                                <div class="small_teachers_img_div">
+                                    <div class="round_div_for_icon">
+                                        <img src="img/leo2.jpg" alt="N.S." class="small_roung_teachers_img"> 
+                                    </div> 
+
+                                </div>                       
+                                <div class="teachers_name_small_card">Lonardo</div>
+                                <div class="teachers_sname_small_card"> da Vinci</div>
+                                <div class="teachers_country_small_card">Italy</div>
+                            </div>
+                            <div class="teacher_card_small"></div>
+                            <div class="teacher_card_small"></div>
+                            
+                        </div>
+                    </div>
+                </section> 
+                <hr>
+                 <!--STATISTICS SECTION -->
+                <section class="statistics_section">
+                    <div class="statistics_topic">
+                        Statistics
+                    </div>
+                    <div class="statistic_table_div">
+                        <table class="statistic_table_table"> 
+                            <tr class="statistic_header_table">
+                                <th class="statistic_name_column">Name</th>
+                                <th class="statistic_age_column">Age</th>
+                                <th class="statistic_gender_column">Gender</th>
+                                <th class="statistic_nationality_column">Nationality</th>
+                            </tr>                         
+                            
+                                <tr class="statistic_tipical_row_white">
+                                    <td class="statistic_name_column">Rick Sanches</td>
+                                    <td class="statistic_age_column">70</td>
+                                    <td class="statistic_gender_column">male</td>
+                                    <td class="statistic_nationality_column">USA</td>
+                                </tr>
+                                <tr class="statistic_tipical_row_grey">
+                                    <td class="statistic_name_column">Morty Smith</td>
+                                    <td class="statistic_age_column">14</td>
+                                    <td class="statistic_gender_column">male</td>
+                                    <td class="statistic_nationality_column">USA</td>
+                                </tr>
+                                <tr class="statistic_tipical_row_white">
+                                    <td class="statistic_name_column">Mark Zakola</td>
+                                    <td class="statistic_age_column">15</td>
+                                    <td class="statistic_gender_column">male</td>
+                                    <td class="statistic_nationality_column">Ukraine</td>
+                                </tr>
+                                <tr class="statistic_tipical_row_grey">
+                                    <td class="statistic_name_column">Ardiano Chelentano</td>
+                                    <td class="statistic_age_column">83</td>
+                                    <td class="statistic_gender_column">male</td>
+                                    <td class="statistic_nationality_column">Italy</td>
+                                </tr>
+                                <tr class="statistic_tipical_row_white">
+                                    <td class="statistic_name_column">Ella Musk</td>
+                                    <td class="statistic_age_column">31</td>
+                                    <td class="statistic_gender_column">female</td>
+                                    <td class="statistic_nationality_column">France</td>
+                                </tr>
+                                <tr class="statistic_tipical_row_grey">
+                                    <td class="statistic_name_column">Helga Melnik</td>
+                                    <td class="statistic_age_column">91</td>
+                                    <td class="statistic_gender_column">female</td>
+                                    <td class="statistic_nationality_column">Skotland</td>
+                                </tr>  
+                        </table>
+                    </div>
+                    <div class="chose_statistic_page">
+                        <a class="chose_statistic_page_link" href="#">1</a>
+                        <a class="chose_statistic_page_link" href="#">2</a>
+                        <a class="chose_statistic_page_link" href="#">3</a>
+                        <a class="chose_statistic_page_link" href="#">...</a>
+                        <a class="chose_statistic_page_link" href="#">Last</a>
+                    </div>
+                </section>  
+                <hr>
+                <!--FAVORIRES SECTION -->
+                <section class="favorites_section_section">
+                    <div class="favorites_topic">
+                        Favorites
+                    </div>
+                    <div class="favorites_div">
+                        <div class="scloll_left_favotites">❮</div>
+
+                        <div class="favorites_content">
+                            <div class="top_teacher_cards">
+                                <div class="teacher_card_small"> 
+                                    <div class="small_teachers_img_div">
+                                        <div class="round_div_for_icon">
+                                            <img src="img/rick2.PNG" alt="N.S." class="small_roung_teachers_img"> 
+                                        </div> 
+    
+                                    </div>                       
+                                    <div class="teachers_name_small_card">Rick</div>
+                                    <div class="teachers_sname_small_card">Sanches</div>
+                                    <div class="teachers_country_small_card">USA</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="scloll_right_favotites">❯</div>
+                    </div>
+                </section>
+                <hr>
+                <footer>
+                    <div class="footer_text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br><br>
+                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+                    </div>
+                    <div class="lowLevelOfFooter">
+                        <nav>
+                            <a class="footerNavElement" href="#">Teachers</a>
+                            <a class="footerNavElement" href="#">Statistics</a>
+                            <a class="footerNavElement" href="#">Favorites</a>
+                            <a class="footerNavElement" href="#">About</a>
+                        </nav>
+                        <div class="add_teacher_button">
+                            Add teacher
+                        </div>
+                    </div>
+                </footer>
+            </main>
+        </div>
+        <!-- ADD TEACHER FORM  -->
+        <div class="add_teacher_block block_hide">
+            <form action="#"> 
+                <fieldset class="add_teacher_fieldset">
+                    <div class="close_add_teach">✖</div>
+                    <div class="add_teacher_header"><h1> Add Teacher</h1></div>
+                    <div class="add_teacher_elem_div">
+                        <label for="fullName" class="add_teach_label">Name</label><br>
+                        <input id="fullName" type="text" name="name" class="add_teach_elem" autofocus required>
+                    </div>
+                    <div class="add_teacher_elem_div">
+                        <label for="country" class="add_teach_label">Country</label><br>  
+                            <select id="country" name="country" class="add_teach_elem">
+                                <option value="Ukraine">Ukraine</option>
+                                <option value="USA">United States of America</option>
+                                <option value="Italy">Italy</option>
+                            </select>
+                    </div>
+                    <div class="add_teacher_elem_div">
+                        <label for="city" class="add_teach_label">City</label><br>
+                        <input id="city" type="text" name="city" class="add_teach_elem">
+                    </div>
+                    <div class="add_teacher_elem_div">
+                        <label for="phone" class="add_teach_label">Phone</label><br>
+                        <input id="phone" type="tel" name="phone" class="add_teach_elem" pattern="[0-9]{5,10}" required>
+                    </div>
+                    <div class="add_teacher_elem_div">
+                        <label for="email" class="add_teach_label">Email</label><br>
+                        <input id="email" type="email" name="email" class="add_teach_elem" required>
+                    </div>
+                    <div class="add_teacher_elem_div">
+                        <label for="age" class="add_teach_label">Age</label><br>
+                        <input id="age" type="text" name="age" class="add_teach_elem">
+                    </div>
+                    <div class="add_teacher_sex"> 
+                        <div>Sex</div>
+                        <div class="sex_choise_radio">  
+                        <label for="SexChoice1">Male</label>
+                        <input type="radio" id="SexChoice1"
+                            name="sex" value="male">
+                        <label for="SexChoice1">Female</label>
+                        <input type="radio" id="SexChoice2"
+                                name="sex" value="female">
+                        </div>
+                    </div>
+                    <div class="add_teacher_elem_color"> 
+                        <label for="color">Бажаний колір фону</label>
+                        <input id="color" type="color" name="color">
+                    </div>
+                    <div class="add_teach_send_button">
+                        <input type="submit" class="add_teacher_button" value="Add">
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+
+        <!-- TEACHER CARD -->
+        <div class="teacher_info block_hide">
+            <div class="close_teach_info">✖</div>
+            <div class="info_header">Teacher Info</div>
+            <div class="teach_info_Content">
+                <div class="teacher_info_photo"></div>
+                <div class="info_nameSname">Rick Sanches </div>
+                <div class="info_location info_elem">USA</div>
+                <div class="info_age_sex info_elem">70,M</div>
+                <div class="info_gmail info_elem">travelfor5minutes@gmail.com</div>
+                <div class="info_phone_number info_elem">+380977777777</div>
+            </div>
+            <div class="info_bottom">
+                <div class="info_other_text">
+                    It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                    Why do we use it?
+                </div>
+                <a href="#" class="info_toggleMap">toggle map</a></div>
+            </div>
+        </div>
+
+        <script> </script>
+    </body>
+    </html>
